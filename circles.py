@@ -14,7 +14,7 @@ class CircleWidget(QWidget):
     def paintEvent(self, event):
         painter = QPainter(self)
         for circle in self.circles:
-            painter.setBrush(QColor(randint(0, 256), randint(0, 256), randint(0, 256)))
+            painter.setBrush(Qt.yellow)
             painter.drawEllipse(circle)
 
     def addCircle(self):
